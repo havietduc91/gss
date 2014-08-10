@@ -1,0 +1,572 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>GSS Online</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+ 
+<script type='text/javascript'>
+    var CL = {
+        metadata : {}, callbacks : {}            
+    };
+    CL.GUEST_ID = 0; CL.SAND_ASSETS_CDN = "http://bao30.com/"; CL.ASSETS_CDN = "http://assets.vieted.com/";
+    CL.STATIC_CDN = "http://s.vieted.com/"; CL.SOUND_CDN = "http://mp3.vieted.com/"; CL.DICT_CDN = "http://da.vieted.com/";
+    CL.CODENAME = "edx"; CL.COOKIE_PREFIX = "_cl_"; CL.DOMAIN = "vieted.com";
+    CL.DEFAULT_AVATAR = "http://bao30.com//images/avatar.gif"; CL.page = "site/index/index"; 
+    CL.APPLICATION_ENV = "testing";       
+    CL.availableRoleAvatars = ['anna','sandy','frazer']; CL.recording_path = "recording"; 
+    CL.school = 've'; CL.FB_APP_ID = "";
+    CL.DATE_FORMAT = "dd/mm/yy";CL.uid = '0';CL.uiid = '';
+    var modal_selector = '#ajaxModal'; //the jquery selector for the modal that will be opened upon clicking a.modal_ajax
+    var get_and_check_answer; var maximum_stars = 5;
+    CL.editorMode = 'student';
+            var icon_star_half = true; 
+            CL.course = -1;
+        var exercises = [];                
+     
+    </script> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/gss.css" rel='stylesheet' type='text/css' />
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="page-layout">
+	<div class="navbar" id='user_menu'>
+         <div class="navbar-header">
+	        </div>
+	        <div class="navbar-collapse collapse" style='padding: 0;'>
+	          <div id='top-menu'>
+	          	<a href="http://gss.local/">
+					<img class="logo-top fl" 
+						src="http://gss.local/images/logo-top.jpg" width="196px;" height="52px;" itemprop="url">
+					</a>
+	          	<ul class='nav navbar-nav pull-right'>
+				    <li class="last-menu"><a href="#">
+				    	<i class="fa fa-clock-o" style='color: green;'></i> 10:52:09 PM-5/8/2014</a></li>
+				    <li><a target="_blank" href="/cong-tac-vien.html">
+				    	<i class='fa fa-users'></i> Cộng tác viên</a></li>
+				    <li><a href="/nha-phan-phoi.html"><span style="color:red;  ">Nhà phân phối</span></a></li>
+				    <li><a href="/dat-hang.html"><span style="color:red;  ">Đặt hàng</span></a></li>
+				    <li><a href="/ho-tro-truc-tuyen.html"> <i class='fa fa-comments'></i>  Hỗ trợ trực tuyến</a></li>
+				    <li><a href="#"><span style="color:red;">HOTLINE :04 2200 1100</span></a></li>
+				</ul>
+	          </div>
+	          <div id='ul-nav-menu'>
+		          <ul class="nav navbar-nav" id='left-main-menu' >
+                     <li>
+		                <a href="http://gss.local/" 
+		            		style='font-size: 24px;'>
+		            		<i class='fa fa-home'></i>
+		            	</a>
+		            </li> 
+		            <li class='dropdown hover '>
+		            	<a data-toggle="dropdown" 
+		            	class="dropdown-toggle" 
+		            		role="button" href="#" 
+		            	>
+		                <i class='fa fa-check'></i>
+		                Giới thiệu
+		            	<span class="caret"></span></a>
+		                <ul class="dropdown-menu" role="menu">
+		    	           <li style='width:100%;'>
+		        	               <a href='/tam-nhin-muc-tieu.html'>
+		        	               	Tầm nhìn, mục tiêu
+		        	               </a>
+		    	           </li>
+		    	           <li style='width:100%;'>
+		        	               <a href='/gia-tri-cot-loi.html'>
+		        	               	Giá trị cốt lõi
+		        	               </a>
+		    	           </li>
+		    	           <li style='width:100%;'>
+		        	               <a href='/hinh-anh-hoat-dong.html'>
+		        	               	Hình ảnh hoạt động
+		        	               </a>
+		    	           </li>
+			           </ul>
+			           
+		            </li>
+		            
+		            <li class='dropdown hover '>
+		                <a href="/doi-tac-va-khach-hang.html" >
+		            		<i class="fa fa-user"></i> Đối tác & Khách hàng</a>
+		            </li>          
+		
+			       <li class='dropdown hover '>
+			           <a data-toggle="dropdown" 
+		            	class="dropdown-toggle" 
+		            		role="button" href="#" >
+		            			Sản phẩm & dịch vụ
+			           <span class="caret"></span>
+			           </a>
+			           <ul class="dropdown-menu" role="menu">
+		    	           <li style='width:100%;'>
+		        	               <a href='/phan-mem-ke-toan.html'>
+		        	               	Phần mềm kế toán
+		        	               </a>
+		    	           </li>
+		    	           <li style='width:100%;'>
+		        	               <a href='/giai-phap-nganh-xay-dung.html'>
+		        	               	Giải pháp ngành xây dựng
+		        	               </a>
+		    	           </li>
+		    	           <li style='width:100%;'>
+		        	               <a href='/giai-phap-quan-ly-thiet-bi-truong-hoc.html'>
+		        	               	Giải pháp quản lý thiết bị trường học
+		        	               </a>
+		    	           </li>
+		    	           <li style='width:100%;'>
+		        	               <a href='/giai-phap-quan-ly-khach-san.html'>
+		        	               	Giải pháp quản lý khách sạn
+		        	               </a>
+		    	           </li>
+		    	           <li style='width:100%;'>
+		        	               <a href='/giai-phap-quan-ly-duoc-pham.html'>
+		        	               	Giải pháp ngành dược phẩm
+		        	               </a>
+		    	           </li>
+		    	           <li style='width:100%;'>
+		        	               <a href='/giai-phap-nganh-thoi-trang.html'>
+		        	               	Giải pháp ngành thời trang
+		        	               </a>
+		    	           </li>
+		    	           <li style='width:100%;'>
+		        	               <a href='/giai-phap-ERP.html'>
+		        	               	Giải pháp ERP
+		        	               	</a>
+        	               	</li>
+       	               	</ul>
+       	               	 </li>
+		
+			       <li class='dropdown hover '>
+			           <a href="/huong-dan-va-download.html" >
+		            			<i class="fa fa-download"></i> Hướng dẫn & Download</a>
+			       </li>
+			       
+			       <li class='dropdown hover '>
+			           <a data-toggle="dropdown" 
+		            	class="dropdown-toggle" 
+		            		role="button" href="#" >Video
+		            		<span class='caret'></span></a>
+		            		
+		            		<ul class="dropdown-menu" role="menu">
+		            		<li style='width:100%;'>
+		        	               <a href='/clip-hai.html'>
+		        	               	Clip hài
+		        	               </a>
+		    	           </li>
+		    	           <li style='width:100%;'>
+		        	               <a href='/clip-huong-dan-phan-mem.html'>
+		        	               	Hướng dẫn phần mềm
+		        	               	</a>
+        	               	</li>
+       	               	</ul>
+			       </li>
+		
+		          </ul>
+	          </div>
+	          
+	          
+	        </div><!--/.nav-collapse -->	
+	    </div>
+	    
+	<div style='min-height: 400px;'>
+		<div class='row'>
+			<div class='col-md-8'>
+				<h1 class="title-newsdetail fl">Hỗ trợ trực tuyến</h1>
+					<div class="content-news fl">
+					    <div align="center">
+					    	<img src="/images/support-online1.jpg" alt="goldstarsoft" style="border: 0" width="100%">
+					    	</div>
+					    <br>
+					</div>
+			</div>
+			<div class='col-md-4'>
+				<div class='row'>
+					<div class='col-md-12'>
+						<div class="checkdomain pnlsupportonline">
+			                <h4 class="titleside titlesupportonline">
+			                	<i class='fa fa-comments' style="color: #29739d;"></i> Hỗ trợ trực tuyến</h4>
+			                <a href="javascript:openonline()">
+			                    <img src="/images/support-online1.jpg" alt="goldstarsoft" style="border: 0">
+			                </a>
+			            </div>
+					</div>
+				</div>
+				<div style="min-height: 10px;"></div>
+				<div class='clearfix'></div>
+				<div class='row'>
+					<div class='col-md-12'>
+						<div class='hot-news'>
+							<div class='heading'>
+								Tin nổi bật
+								<i class='fa fa-chevron-down pull-right'
+								style='font-size: 16px;'></i>
+							</div>
+							<div class='content'>
+								<div class='new-list'>
+									<div class='item'>
+										<div class='row'>
+											<div class='col-md-4'>
+												<img 
+													alt="Banks warned about exchange rate dangers in 2009" 
+													src="http://joomlatemplates.youjoomla.info/dailynews/media/k2/items/cache/184b7cb84d7b456c96a0bdfbbeaa5f14_L.jpg" width="100%">
+											</div>
+											<div class='col-md-8'>
+												<span> Banks warned about exchange rate dangers in 2009 </span></br>
+												<span> 24<br><b> October</b>  </span></br>
+											</div>
+										</div>
+									</div>
+									
+									<div class='item'>
+										<div class='row'>
+											<div class='col-md-4'>
+												<img 
+													alt="Banks warned about exchange rate dangers in 2009" 
+													src="http://joomlatemplates.youjoomla.info/dailynews/media/k2/items/cache/184b7cb84d7b456c96a0bdfbbeaa5f14_L.jpg" width="100%">
+											</div>
+											<div class='col-md-8'>
+												<span> Banks warned about exchange rate dangers in 2009 </span></br>
+												<span> 24<br><b> October</b>  </span></br>
+											</div>
+										</div>
+									</div>
+									
+									<div class='item'>
+										<div class='row'>
+											<div class='col-md-4'>
+												<img alt="Putin frees his enemies as part of Sochi spin" 
+													src="http://joomlatemplates.youjoomla.info/dailynews/media/k2/items/cache/e0a70f72bdae9885bfc32d7cd19a26a1_L.jpg" width="100%">
+											</div>
+											<div class='col-md-8'>
+												<span> Banks warned about exchange rate dangers in 2009 </span></br>
+												<span> 24<br><b> October</b>  </span></br>
+											</div>
+										</div>
+									</div>
+									
+									<div class='item'>
+										<div class='row'>
+											<div class='col-md-4'>
+												<img 
+													alt="Banks warned about exchange rate dangers in 2009" 
+													src="http://joomlatemplates.youjoomla.info/dailynews/media/k2/items/cache/2ff2ba0051687eef5ca0459cf942940c_L.jpg" width="100%">
+											</div>
+											<div class='col-md-8'>
+												<span> Banks warned about exchange rate dangers in 2009 </span></br>
+												<span> 24<br><b> October</b>  </span></br>
+											</div>
+										</div>
+									</div>
+									
+									<div class='item'>
+										<div class='row'>
+											<div class='col-md-4'>
+												<img 
+													alt="Banks warned about exchange rate dangers in 2009" 
+													src="http://joomlatemplates.youjoomla.info/dailynews/media/k2/items/cache/ffee2447b152494b43d9816faaea83c8_L.jpg" width="100%">
+											</div>
+											<div class='col-md-8'>
+												<span> Banks warned about exchange rate dangers in 2009 </span></br>
+												<span> 24<br><b> October</b>  </span></br>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div style="min-height: 10px;"></div>
+						<div class='top-news'>
+							<div class='heading'>
+								Chuyên mục hot
+								<i class='fa fa-chevron-down pull-right'
+								style='font-size: 16px;'></i>
+							</div>
+							<!-- Nav tabs -->
+							<ul class="nav nav-tabs" role="tablist">
+							  <li class="active"><a href="#hot_tab_video" role="tab" data-toggle="tab">Video</a></li>
+							  <li>
+							  	<a href="#hot_tab_product" role="tab" data-toggle="tab">Sản phẩm</a></li>
+							  <li><a href="#hot_tab_new" role="tab" data-toggle="tab">Tin</a></li>
+							</ul>
+							
+							<!-- Tab panes -->
+							<div class="tab-content">
+							  <div class="tab-pane active" id="hot_tab_video">
+							  		<div class="video1">
+									  <a href="#">
+										  <div class="thumb">
+											<img title="Cô Gái Mở Đường - LEG Official" src="http://img.youtube.com/vi/U7V--PQreqo/0.jpg">
+												<div class="duration">
+																				00:03:41						</div>
+											</div>
+										<div class="info">
+												<span class="name_video">
+																			Cô Gái Mở Đường - LEG Official											</span>
+												<span class='view_video'><i class='fa fa-eye'></i> 359</span>
+										</div>
+										<div class="clear"> </div>
+									   	</a>
+									</div>
+								
+									<div class="video1">
+									  <a href="#">
+										  <div class="thumb">
+											<img title="Mình yêu nhau đi - phiên bản cô giáo TIẾNG ANH (X-Team)" src="http://img.youtube.com/vi/pswOI-HmVws/0.jpg">
+												<div class="duration">
+																				00:02:49						</div>
+											</div>
+										<div class="info">
+											<span class="name_video">
+																			Mình yêu nhau đi - phiên bản cô giáo TIẾNG ANH .....											</span>
+												<span class='view_video'><i class='fa fa-eye'></i> 359</span>
+										</div>
+										<div class="clear"> </div>
+									   	</a>
+									</div>
+									
+									<div class="video1">
+									  <a href="#">
+										  <div class="thumb">
+											<img title="Như Hexi - Mình yêu nhau đi - Cover Bựa" src="http://img.youtube.com/vi/sxElEUzoKBQ/0.jpg">
+												<div class="duration">
+																				00:03:38						</div>
+											</div>
+										<div class="info">
+											<span class="name_video">
+																			Như Hexi - Mình yêu nhau đi - Cover Bựa											</span>
+												   <span class='view_video'><i class='fa fa-eye'></i> 359</span>
+										</div>
+										<div class="clear"> </div>
+									   	</a>
+									</div>
+									
+									<div class="video1">
+									  <a href="#">
+										  <div class="thumb">
+											<img title="Mình Yêu Nhau Đi Thái Tuyết Trâm Cover Hot" src="http://img.youtube.com/vi/ndFSzoUkb60/0.jpg">
+												<div class="duration">
+																				00:03:05						</div>
+											</div>
+										<div class="info">
+											<span class="name_video">
+																			Mình Yêu Nhau Đi Thái Tuyết Trâm Cover Hot .....											</span>
+										 	  <span class='view_video'><i class='fa fa-eye'></i> 359</span>	
+										</div>
+										<div class="clear"> </div>
+									   	</a>
+									</div>
+									
+									<div class="video1">
+									  <a href="#">
+										  <div class="thumb">
+											<img title="[Cover] Mình yêu nhau đi - Hương Ly ft Quỳnh Anh" src="http://img.youtube.com/vi/-HoaXwJQA-0/0.jpg">
+												<div class="duration">
+																				00:03:22						</div>
+											</div>
+										<div class="info">
+											<span class="name_video">
+																			[Cover] Mình yêu nhau đi - Hương Ly ft Quỳnh A .....											</span>
+
+												<span class='view_video'><i class='fa fa-eye'></i> 359</span>										    	
+										</div>
+										<div class="clear"> </div>
+									   	</a>
+									</div>
+							  	</div>
+							  <div class="tab-pane" id="hot_tab_product">
+									<div class='new-list'>
+										<div class='item'>
+											<div class='row'>
+												<div class='col-md-4'>
+													<img 
+														alt="Banks warned about exchange rate dangers in 2009" 
+														src="http://joomlatemplates.youjoomla.info/dailynews/media/k2/items/cache/184b7cb84d7b456c96a0bdfbbeaa5f14_L.jpg" width="100%">
+												</div>
+												<div class='col-md-8'>
+													<span> Banks warned about exchange rate dangers in 2009 </span></br>
+													<span> 24<br><b> October</b>  </span></br>
+												</div>
+											</div>
+										</div>
+										
+										<div class='item'>
+											<div class='row'>
+												<div class='col-md-4'>
+													<img 
+														alt="Banks warned about exchange rate dangers in 2009" 
+														src="http://joomlatemplates.youjoomla.info/dailynews/media/k2/items/cache/184b7cb84d7b456c96a0bdfbbeaa5f14_L.jpg" width="100%">
+												</div>
+												<div class='col-md-8'>
+													<span> Banks warned about exchange rate dangers in 2009 </span></br>
+													<span> 24<br><b> October</b>  </span></br>
+												</div>
+											</div>
+										</div>
+										
+										<div class='item'>
+											<div class='row'>
+												<div class='col-md-4'>
+													<img alt="Putin frees his enemies as part of Sochi spin" 
+														src="http://joomlatemplates.youjoomla.info/dailynews/media/k2/items/cache/e0a70f72bdae9885bfc32d7cd19a26a1_L.jpg" width="100%">
+												</div>
+												<div class='col-md-8'>
+													<span> Banks warned about exchange rate dangers in 2009 </span></br>
+													<span> 24<br><b> October</b>  </span></br>
+												</div>
+											</div>
+										</div>
+										
+										<div class='item'>
+											<div class='row'>
+												<div class='col-md-4'>
+													<img 
+														alt="Banks warned about exchange rate dangers in 2009" 
+														src="http://joomlatemplates.youjoomla.info/dailynews/media/k2/items/cache/2ff2ba0051687eef5ca0459cf942940c_L.jpg" width="100%">
+												</div>
+												<div class='col-md-8'>
+													<span> Banks warned about exchange rate dangers in 2009 </span></br>
+													<span> 24<br><b> October</b>  </span></br>
+												</div>
+											</div>
+										</div>
+										
+										<div class='item'>
+											<div class='row'>
+												<div class='col-md-4'>
+													<img 
+														alt="Banks warned about exchange rate dangers in 2009" 
+														src="http://joomlatemplates.youjoomla.info/dailynews/media/k2/items/cache/ffee2447b152494b43d9816faaea83c8_L.jpg" width="100%">
+												</div>
+												<div class='col-md-8'>
+													<span> Banks warned about exchange rate dangers in 2009 </span></br>
+													<span> 24<br><b> October</b>  </span></br>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							  <div class="tab-pane" id="hot_tab_new">
+									<ul class='new-list'>
+										<li class='item'>
+											<a href="#">
+												<span class="title">
+													Công văn số 9456/TCHQ-QLRR ngày 29/7/2014 của Tổng cục 
+														Hải quan v/v áp dụng bộ tiêu chí theo Quyết định 279/QĐ-BTC 
+												</span>
+											</a>
+										</li>
+										<li class='item'>
+											<a href="#">
+												<span class="title">
+													Công văn số 9509/TCHQ-KTSTQ ngày 29/7/2014 của Tổng cục Hải quan v/v 
+														trả lời Công văn 1606/2014/CV-ABTEL về việc yêu cầu tạm đình 
+															chỉ việc thi hành quyết định hành chính  
+												</span>
+											</a>
+										</li>
+										<li class='item'>
+											<a href="#">
+												<span class="title">
+													Công văn số 9504/TCHQ-TXNK ngày 29/7/2014 của Tổng cục Hải quan v/v xử lý 
+														nợ thuế về việc xem xét dừng áp
+														 dụng biện pháp cưỡng chế và xóa phạt chậm nộp (8/8/2014)
+												</span>
+											</a>
+										</li>
+										<li class='item'>
+											<a href="#">
+												<span class="title">
+													Công văn số 9502/TCHQ-GSQL ngày 29/7/2014 của Tổng cục Hải quan v/v 
+														hàng hóa xuất khẩu qua cửa khẩu phụ nằm ngoài khu Kinh tế cửa khẩu (
+												</span>
+											</a>
+										</li>
+										<li class='item'>
+											<a href="#">
+												<span class="title">
+													Công văn số 9515/TCHQ-VNACCS ngày 29/7/2014 của Tổng cục Hải quan v/v
+														 số lượng số thập phân của trị giá và đơn vị hàng hóa nhập khẩu 
+												</span>
+											</a>
+										</li>
+										<li class='item'>
+											<a href="#">
+												<span class="title">
+													Công văn số 2888/TCT-CS ngày 29/7/2014 của Tổng cục Thuế v/v 
+														chính sách thuế Thu nhập doanh nghiệp 
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id='footer' class='fixed-bottom hidden-print promo-wrapper' >
+	<div class='row' style=' margin: 0 auto; width: 990px;'>
+		<div class='col-md-6'>
+			<div class="column-footer fl">
+				<!--<div class="top fl"><a href=""><img src="http://sis.vn/sis-ieos.nsf/ImagesSis2012/$File/RSS.jpg" /> RSS</a></div>
+				<div class="top fl"><a href="mailto:sales@sisvn.com"><img src="http://sis.vn/sis-ieos.nsf/ImagesSis2012/$File/email.jpg" /> Email</a></div>
+				<div class="top fl"><a href=""><img src="http://sis.vn/sis-ieos.nsf/ImagesSis2012/$File/feeback.jpg" /> Thông tin phản hồi</a></div>-->
+				<div style="height:15px;" class="cl"></div>
+				<div class="information-footer fl">
+				<div>Cơ quan chủ quản: <span class="bold" itemprop="name">Công ty Cổ phần ... &ndash; ....JSC</span></div>
+				<div>Địa chỉ: Số 17/183 phố Đặng Tiến Đông - Đống Đa - Hà Nội</div>
+				<div>Điện thoại: 04. 35 117 785 - Fax:  04. 35 117 787  </div>
+				<div>Email:.....com</div>
+				<div>Số lượng người truy cập</div>
+			<div style="height:3px;" class="cl"></div>
+			<div> 
+			<!-- GoStats Simple HTML Based Code -->
+			<!--<a target="_blank" title="Bộ đếm web cho blog miễn phí" href="http://gostats.vn"><img alt="Bộ đếm web cho blog miễn phí" 
+			src="http://c2.gostats.vn/bin/count/a_648340/t_7/i_3/z_0/show_visitors/counter.png" 
+			style="border-width:0" /></a>-->
+			<!--<a target="_blank" title="Các bộ đếm & Phân tích lưu lượng" href="http://gostats.vn"><img alt="Các bộ đếm & Phân tích lưu lượng" 
+			src="http://c2.gostats.vn/bin/count/a_648340/t_3/i_5/counter.png" 
+			style="border-width:0" /></a>-->
+			<!-- End GoStats Simple HTML Based Code -->
+			<!--<a href="http://www.alexa.com/siteinfo/http://sis.vn/"><script type='text/javascript' src='http://xslt.alexa.com/site_stats/js/s/c?url=http://sis.vn/'></script></a>-->
+			</div>
+				</div>
+			</div>
+		</div>
+		<div class='col-md-6'>
+			<div class="column-footer fr">
+				<div class="top bold fr"><a href="#">Điều khoản</a></div>
+				<div class="top bold fr"><a href="#">HotLine</a></div>
+				<div class="top bold fr"><a href="#">Tuyển dụng</a></div>
+				<div class="top bold fr"><a href="#">Liên hệ</a></div>
+				<div class="clearfix"></div>
+				<img class="fr" src="" width='50px' height='50px'>
+				<div class="top fr">Copyright &copy; ...</div>
+				<div class="cl"></div>
+                 <div class="fr"><span itemtype="http://schema.org/Person" itemscope="" 
+                 	itemprop="author"> 
+                 	<span itemprop="name">.....</span></span>: 0934. 382 524 email: ....@gmail.com </div>
+			</div>
+		</div>
+	</div>
+	
+</div> 
+</body>
+</html>
